@@ -1,0 +1,130 @@
+#mainBox {
+    background-color: #eee;
+    width: 90%;
+    margin: 20px auto!important;
+    height:530px;
+    min-width:1000px;
+    position: relative;
+
+}
+#mainleft{
+    width:20%;
+    background-color:#fff;
+    /*margin-right:3%;*/
+    float:left;
+}
+#infoMain{
+    width:77%;
+    background-color: #fff;
+    /*height:530px;*/
+    float:right;
+}
+#mainl-top{
+    padding: 32px 0 24px;
+}
+#avator-mode{
+    /*position: relative;*/
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 4px solid #d9dde1;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+#mainl-list h2,#infoMain-top h2{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 24px;
+    font-weight: 700;
+    padding-bottom:15px;
+    border-bottom:1px solid #ccc;
+}
+#menu{
+    padding: 10px 0 25px;
+}
+#menu li {
+    width: 100%;
+    height: 48px;
+}
+#menu li:hover a{
+    background-color:#ccc;
+    color:#fff;
+}
+#menu li a{
+   text-decoration: none;
+    color:#14191e;
+    display: block;
+    position: relative;
+    padding: 0 0 0 54px;
+    height: 48px;
+    line-height: 48px;
+    transition: background-color .3s ease;
+}
+#infoMain-top{
+    width:98%;
+    height:50px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 7px;
+}
+#infoMain-top h2{
+    float:left;
+    border-bottom:none!important;
+}
+#btn-write{
+    padding-top: 11px;
+    float:right;
+}
+#btn-write a{
+    color:#ccc;
+    text-decoration:none;
+}
+#btn-write a:hover{
+    color: #028dc8;
+}
+#info-bottom{
+    width: 95%;
+    height:300px;
+    margin: 24px auto 24px 40px;
+}
+.info-box{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info-box label {
+    width: 15%;
+    height: 50px;
+    background-color: #f3f5f7;
+    text-align: center;
+    padding-top:14px;
+    border-radius: 3px;
+    float:left;
+
+}
+.info-box div{
+    margin-left:15px;
+    padding-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 82%;
+    padding-bottom: 5px;
+    float: left;
+}
+.clear{
+    clear:both;
+}
+
+
+#footer-link li {
+    width: 55px;
+}
+
+#copyright {
+    width: 800px;
+    
+    }

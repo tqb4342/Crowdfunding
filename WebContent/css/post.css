@@ -1,0 +1,481 @@
+        body, html, ul, form {
+            padding: 0;
+            margin: 0;
+        }
+        #header1 {
+            height: 72px;
+            margin-bottom:10px;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+            -webkit-transition: color 0.2s;
+            -moz-transition: color 0.2s;
+            -ms-transition: color 0.2s;
+            -o-transition: color 0.2s;
+            transition: color 0.2s;
+        }
+
+        body {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            background: #f5d9e1;
+        }
+
+        #header1 .header-fixed1 {
+            position: relative;
+            height:72px;
+            background: -webkit-linear-gradient(top, #FFFEFD, #FFCE9E);
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header1 .header-fixed1 {
+            top: 0;
+            left: 0;
+            right: 0;
+            -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        .header1 .header-inner1 {
+            font-family: "proxima-nova", sans-serif;
+            max-width: 53em;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: 100%;
+        }
+
+        .header-inner1 > div {
+            display: inline-block;
+        }
+
+        .header1 .header-inner1 span {
+            display: inline-block;
+            float: left;
+        }
+
+        .header-inner1 .logo1 {
+            margin-top: 7px;
+            display: inline-block;
+            background-image: url('img/spirit.png');
+            background-position: -64px -27px;
+            background-repeat: no-repeat;
+            width: 64px;
+            height: 58px;
+        }
+
+        .header-inner1 h1 {
+            font-weight: 700;
+            display: inline-block;
+            margin-left: 10px;
+            color: #5C5C5C;
+        }
+
+        .header-nav1 {
+            width: calc(100% - 211px);
+            height: 72px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .header-nav1 ul {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .header-nav1 li {
+            border-top: 1px solid transparent;
+            float: left;
+            font-size: 14px;
+
+            list-style: none;
+
+        }
+
+        .header-nav1 li:hover {
+            border-top: 1px solid #fed6d4;
+            color: #333;
+            background: #ffd1a4;
+        }
+
+        .header-nav1 li a {
+            padding: 0 25px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .clearfix {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .logoin1 {
+            position: relative;
+            float: right !important;
+            height: 54px;
+            line-height: 54px;
+        }
+
+        .logoin1 .logoinlog1 {
+            margin-top: 7px;
+            display: inline-block;
+            width: 54px;
+            height: 54px;
+            background-image: url('img/spirit.png');
+            background-position: -1144px -32px;
+        }
+
+        .logofont1 {
+            position: absolute;
+            top: 44px;
+            left: 50px;
+            background: #fff;
+            display: none;
+        }
+
+        .logofont1 ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #D6D6D6;
+        }
+
+        .logofont1 ul li {
+            display: block;
+            width: 90px;
+            line-height: 45px;
+            height: 45px;
+            border-bottom: 1px solid #D6D6D6;
+            text-align: center;
+        }
+        .logofont1 ul li:hover{
+            background: #ffdebd;
+        }
+
+        .logofont1 ul li:last-child {
+            border: 0;
+        }
+
+        .logoin1:hover div.logofont1 {
+            display: block;
+        }
+
+        ul, li {
+            padding: 0;
+            margin: 0
+        }
+
+        .menu1 {
+            padding: 0;
+        }
+
+        .menu1 li {
+            height: 72px;
+            line-height: 72px;
+        }
+        .clearfix {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .content {
+            width: 920px;
+            /*background: #009900;*/
+            margin: 0 auto;
+        }
+
+        .content > div {
+            float: left;
+            background: #fff;
+        }
+
+        .content:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .content .conbar {
+            width: 168px;
+            margin-right:20px;
+        }
+        .content .conbar ul{
+            margin:0;
+            padding:0;
+        }
+
+        .content .concon {
+            width: 728px;
+            /*background: #e21a7a;*/
+        }
+
+        .content .concon .connav1 {
+            width: 728px;
+            /*background: #e29edb;*/
+            border-bottom: 1px solid #eee;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .content .concon .connav2 {
+            width: 230px;
+            /*background: #e22dac;*/
+        }
+
+        .content .concon > div {
+            float: left
+        }
+
+        .conbar li {
+            background: #e29edb;
+            line-height: 30px;
+            border-bottom: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .conbar li:hover {
+            color: #fff;
+            background: #e26eb4;
+        }
+
+        .textarea {
+            outline: none;
+            border: 0;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .edittab {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .edittab .camera {
+            display: inline-block;
+            /*position: absolute;*/
+            /*right: 0;*/
+            /*top: 0;*/
+            width: 54px;
+            height: 70px;
+            line-height: 67px;
+            border: 1px solid #eee;
+            background: #FAFAFA;
+        }
+
+        .editsubmit {
+            position: relative;
+            background: #fff;
+            padding: 5px;
+            display: none;
+        }
+
+        .edittab {
+            position: relative;
+        }
+
+        .icon {
+            position: absolute;
+            top: 28px;
+            left: 0px;
+            width: 200px;
+            background: #fff;
+            display: none;
+        }
+
+        .icon ul {
+            margin-bottom: 0;
+        }
+
+        .icon ul li {
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 5px;
+            border: 1px solid #fff;
+
+        }
+
+        .icon ul li:hover {
+            border: 1px solid #9acfea;
+        }
+
+        .input-group {
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+
+        .editsubmit .tubiao {
+            /*display:inline-block;*/
+            line-height: 30px;
+            display: none;
+        }
+
+        .editsubmit .submitbtn {
+            display: inline-block;
+            border: 0;
+            background: #2aabd2;
+            width: 80px;
+            font-weight: 600;
+            text-decoration: none;
+            line-height: 30px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .activediv {
+            position: relative;
+            background: #fff;
+            display:inline-block;
+        }
+
+        .concon h3 {
+            margin: 0;
+            font-color: #666;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+
+        .select11 {
+            display: none;
+            position: absolute;
+        }
+
+        .select11 li {
+            width: 80px;
+            display: block;
+            line-height: 30px;
+            background: #e2bacb;
+            padding-left: 5px;
+        }
+
+        .activediv:hover ul.select11 {
+            display: block;
+            top: 25px;
+            left: 10px;
+        }
+
+        .select11 li:hover {
+            background: #e28f9e;
+        }
+
+        .fabu {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .concon .users{margin-bottom:10px;}
+
+          .concon .users > div:last-child {
+            margin-bottom: 0;
+        }
+
+        .usermessage {
+            padding: 10px 0 10px 10px;
+            /*background: #9acfea;*/
+
+        }
+
+        .imggg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50% 50%;
+        }
+
+        .content11 {
+            /*background: #82e2d3;*/
+        }
+
+        .users .content11 {
+
+        }
+
+        .users .fontcontent {
+            padding: 10px;
+        }
+
+        .users .imgcontent {
+            padding: 0 10px;
+        }
+
+        .imgg {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50% 50%;
+        }
+
+        .users .pinglun {
+            padding: 10px;
+        }
+
+        .users .pinglun>div {
+            margin-bottom: 10px;
+        }
+        .users .icon2{
+            position:relative;
+        }
+        .users .icon2:hover .icon1{
+            display: inline-block;
+        }
+        .users .icon1{
+            position:absolute;
+            /*display:inline-block;*/
+            width:20px;
+            right:0;
+            top:15px;
+            display:none;
+        }
+        .users .pinglun .clearbottom{
+            margin-bottom:0;
+            border:1px solid #eee;
+        }
+        .allactive{
+            text-indent: 10px;
+            display:inline-block!important;
+        }

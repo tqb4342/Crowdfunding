@@ -1,0 +1,50 @@
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}
+#voiceBtn {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+  transform: scale(2.0, 2.0);
+  -webkit-transform: scale(2.0, 2.0);
+  -moz-transform: scale(2.0, 2.0);
+  border: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+ #editor {overflow:scroll; max-height:300px}
+ 
+ 
+ body { margin:0; padding:0; background:#f6f6f6; }
+.divedit { width:1025px; margin:100px auto 0; position:relative; }
+.textinput { min-height:600px; _height:60px; padding:10px; font-size:15px; color:#a7a7a7; border:1px solid #d9d9d9; outline:0; background:#fff; }
+.texthover .textinput { border-color:#337ab7; }
+.texthover .arrowline { border-color:transparent transparent #f5507a transparent; }
+.arrowbox { width:20px; height:20px; position:absolute; left:52px; top:-9px; }
+.arrow { width:0; height:0; font-size:0; line-height:0; position:absolute; overflow:hidden; }
+/*.arrowline { top:-1px; border-style:dashed dashed solid; border-width:5px; border-color:transparent transparent #d9d9d9 transparent; }
+.arrowbg { top:0; border-style:dashed dashed solid; border-width:5px; border-color:transparent transparent #fff transparent; }*/

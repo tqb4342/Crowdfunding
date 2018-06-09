@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Crowdfunding.po">
+	<class name="User" table="user">
+		<id name="uid" type="integer" column="uid">
+			<generator class="increment"/>
+		</id> 
+		<property name="account" column="account" type="string" not-null="true"/> 
+		<property name="username" column="username" type="string" not-null="true"/> 
+		<property name="password" column="password" type="string" not-null="true"/>  
+		<property name="number" column="number" type="string" not-null="true"/> 
+		<property name="flag" column="flag" type="string" not-null="true"/> 
+ 	<set name="project" cascade="delete" lazy="false"  inverse="true" >
+			<key column="uid" update="false" not-null="true"/>
+			<one-to-many class="Crowdfunding.po.Project"  ></one-to-many>
+	</set> 
+	
+	<set name="com" cascade="delete" lazy="false"  inverse="true" >
+			<key column="uid" update="false" not-null="true"/>
+			<one-to-many class="Crowdfunding.po.Comment"  ></one-to-many>
+	</set> 
+	
+	<set name="fund" cascade="delete" lazy="false"  inverse="true" >
+			<key column="uid" update="false" not-null="true"/>
+			<one-to-many class="Crowdfunding.po.Fund"  ></one-to-many>
+	</set> 
+	</class>
+</hibernate-mapping>

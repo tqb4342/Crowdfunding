@@ -1,0 +1,148 @@
+html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #2d2d2d;
+}
+ol,ul {
+    list-style: none;
+}
+i, em {
+    font-style: normal;
+    font-weight: normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body, button, input, select, textarea {
+    font:  12px/1.5 "\5FAE\8F6F\96C5\9ED1",Arial,HELVETICA;
+}
+html {
+    /*¹Ø±Õ×ÖÌå´óÐ¡×Ô¶¯µ÷Õû¹¦ÄÜ*/
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    background-color: #FFF;
+}
+/*BFC*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+/*Çå³ý¸¡¶¯*/
+.clearfloat:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.clearfloat {
+    zoom: 1;
+}
+
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.blue {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+.black {
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(top,  #666,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+.black:hover {
+	background: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top,  #444,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+.black:active {
+	color: #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+	background: -moz-linear-gradient(top,  #000,  #444);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}
+
+/*select 样式*/
+select{ 
+margin: 0;  
+padding-right:27px;
+outline: none; 
+height: 25px; 
+line-height: 25px; 
+width: 120px; 
+border: rgb(191, 204, 220) 1px solid; 
+border-radius: 3px; 
+display: inline-block; 
+font: normal 12px/25px "微软雅黑", "SimSun", "宋体", "Arial"; 
+background-size: 5px 5px,5px 5px,25px 25px,1px 25px; 
+background-color: #fff; 
+background-image: repeating-linear-gradient(225deg,rgb(105,123,149) 0%,rgb(105,123,149) 50%,transparent 50%,transparent 100%), 
+repeating-linear-gradient(135deg,rgb(105,123,149) 0%,rgb(105,123,149) 50%,transparent 50%,transparent 100%), 
+linear-gradient( #FFFFFF 0%,#F8F9Fd, #EFFAFA 100%), 
+repeating-linear-gradient( rgb(191, 204, 220) 0%,rgb(191, 204, 220) 100%); 
+background-repeat: no-repeat; 
+background-position: 101px 10px,106px 10px,right top,92px top; 
+-webkit-appearance: none 
+} 

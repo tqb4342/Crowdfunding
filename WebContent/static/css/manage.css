@@ -1,0 +1,138 @@
+
+#manage-information-div{
+	margin: 20px 0;
+}
+.upmove{
+	margin-top:-7px; 
+}
+.container{
+	margin: 20px auto;
+	width:750px;
+	line-height: 34px;
+}
+.row{
+	margin: 5px 0;
+}
+.content{
+	width: 1000px;
+	margin: 0 auto;
+}
+.content:after{
+	display: block;
+	content: "";
+	clear: all;
+}
+.right{
+	float: right !important;
+}
+.hiden{
+	display: none;
+}
+.hand{
+	cursor: pointer;
+}
+.hand:hover{
+	opacity: 0.8;
+}
+.textcenter{
+	text-align: center;
+}
+.upmove1{
+	position: relative;
+	top:0;
+}
+.editor {
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 4px;
+    box-sizing: content-box;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+}
+.red-border{
+	border:red solid 1px;
+}
+
+
+
+.exam-content{
+	position:relative;	
+}
+
+.exam-nav{
+	position:fixed;
+	right:0;
+}
+
+.container-text{
+	position: relative;
+	top: -15px;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+
+.exam-text{
+	padding-top:10px;
+	margin-left:0;
+}
+
+.panel-body{
+	border: 1px solid #ddd;
+}
+
+.exam-tooltip{
+	position: relative;
+	top: -15px;
+}
+.panel-footer{
+	border:1px solid #ddd;
+	border-top:none;	
+	background-color: #fff;
+}
+.panel-body{
+	padding: 5px;
+}
+.down-8{
+	margin-top:8px;
+}
+.input{
+	  display: block;
+	  height: 34px;
+	  padding: 6px 12px;
+	  font-size: 14px;
+	  line-height: 1.42857143;
+	  color: #555;
+	  background-color: #fff;
+	  background-image: none;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.no{
+	position:absolute;
+	top:15px;
+	left:15px;
+	font-size:12px;
+	font-weight:700;
+	color:#959595;
+	letter-spacing:1px;
+}
+.down5{
+	margin-top:5px;
+}
+.margin-right-8{
+	margin-right:8px;
+}
+.down20{
+	margin-top:20px;
+}

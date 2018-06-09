@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Crowdfunding.po">
+	<class name="Project" table="project">
+		<id name="pid" type="integer" column="pid">
+			<generator class="increment"/>
+		</id> 
+		<property name="uid" column="uid" type="integer" not-null="true"/> 
+		<property name="tid" column="tid" type="integer" not-null="true"/>  
+		<property name="title" column="title" type="string" not-null="true"/>  
+		<property name="texts" column="texts" type="text" not-null="true"/>  
+		<property name="maincontent" column="maincontent" type="text" not-null="true"/> 
+		<property name="money" column="money" type="double" not-null="false"/>  
+		<property name="releasedate" column="releasedate" type="date" not-null="true"/>  
+		
+	<many-to-one name="user" class="Crowdfunding.po.User" cascade="save-update" column="uid" insert="false" update="false" lazy="false"  not-null="true"/>
+	<many-to-one name="types" class="Crowdfunding.po.Types" cascade="save-update" column="tid" insert="false" update="false" lazy="false"  not-null="true"/>
+	<set name="com" cascade="delete" lazy="false"  inverse="true" order-by="pid desc" >
+			<key column="pid" update="false" not-null="true"/>
+			<one-to-many class="Crowdfunding.po.Comment"  ></one-to-many>
+	</set> 
+	
+	<set name="fund" cascade="delete" lazy="false"  inverse="true" order-by="pid desc" >
+			<key column="pid" update="false" not-null="true"/>
+			<one-to-many class="Crowdfunding.po.Fund"  ></one-to-many>
+	</set> 
+	
+	</class>
+</hibernate-mapping>

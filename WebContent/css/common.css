@@ -1,0 +1,101 @@
+#login-div{
+    position: relative;
+}
+#login-div .imglogo{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    overflow: hidden;
+}
+#login-div:hover .logoin-div{
+    display:block;
+}
+imglogo img{
+    vertical-align: inherit;
+}
+#login-div .logoin-div{
+    display:none;
+    position:absolute;
+    top:50px;
+    right:0;
+    z-index:800;
+}
+#login-div{line-height:40px;}
+#login-div .logoin-div li{
+    list-style: none;
+    width:150px;
+    border-bottom:1px solid #eee;
+    border-right:1px solid #eee;
+    border-left:1px solid #eee;
+    background: #fff;
+    /*height:40px;*/
+}
+.page-container .nologin{
+    display:inline-block;
+    float:right;
+}
+.nologin a:hover{
+    background: #ff8621;
+    text-decoration: none;
+}
+#login-div{line-height:40px;}
+.header  li{
+    float:left;
+    margin-left:10px;
+}
+#login-div .logoin-div a{
+    color:#333;
+}
+
+.nologin a {
+    display: inline-block;
+    padding: 5px;
+    background: #ffae3a;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+}
+.nologin a:hover{
+    background: #ff8621;
+    text-decoration: none;
+}
+.page-container li {
+    list-style-type: none;
+    display: inline-block!important;
+}
+.page-container .nologin{
+    display:inline-block;
+    float:right;
+}
+
+
+
+
+
+#login-div .logoin-div li {
+    list-style: none;
+    width: 150px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    background: #fff;
+    /* height: 40px; */
+}
+ li {
+    list-style-type: none;
+    display:inline-block!important;
+}
+
+#login-div{padding: 5px;}
+#login-div .logoin-div li{
+    list-style: none;
+    width:150px;
+    border-bottom:1px solid #eee;
+    border-right:1px solid #eee;
+    border-left:1px solid #eee;
+    background: #fff;
+    /*height:40px;*/
+}

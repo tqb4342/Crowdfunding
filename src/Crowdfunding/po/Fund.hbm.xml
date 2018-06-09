@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Crowdfunding.po">
+	<class name="Fund" table="fund">
+		<id name="fid" type="integer" column="fid">
+			<generator class="increment"/>
+		</id> 
+		<property name="pid" column="pid" type="integer" not-null="true"/> 
+		<property name="uid" column="uid" type="integer" not-null="true"/> 
+		<property name="money" column="money" type="double" not-null="true"/>  
+		<property name="date" column="date" type="date" not-null="false"/> 
+		<many-to-one name="user" class="Crowdfunding.po.User" cascade="save-update" column="uid" insert="false" update="false" lazy="false"  not-null="true"/>
+		<many-to-one name="project" class="Crowdfunding.po.Project" cascade="save-update" column="pid" insert="false" update="false" lazy="false"  not-null="true"/>
+	</class>
+</hibernate-mapping>

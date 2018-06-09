@@ -1,0 +1,35 @@
+#headPic{
+	width:92px;
+	height:auto;
+}
+
+
+        .update-avator {
+            font-size: 12px;
+            position: absolute;
+            top:62px;
+            width: 100%;
+            left: 0;
+            display: none;
+        }
+
+        .update-avator p {
+            background: rgba(0, 0, 0, .6);
+            color:#fff;
+            line-height: 30px;
+        }
+
+        .update-avator a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #avator-mode {
+            position:relative;
+            overflow:hidden;
+
+        }
+        #avator-mode:hover .update-avator{
+            display: block;
+        }
+
+

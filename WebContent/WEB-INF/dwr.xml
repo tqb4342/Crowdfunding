@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC 
+	"-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+	"http://getahead.org/dwr/dwr30.dtd">
+<dwr>
+	<allow>
+		<create creator="spring" javascript="UserManager"> 
+			<param name="beanName" value="userManager"/>
+		</create> 
+		<create creator="spring" javascript="TypesManager"> 
+			<param name="beanName" value="typesManager"/>
+		</create> 
+		
+		<create creator="spring" javascript="ProjectManager"> 
+			<param name="beanName" value="projectManager"/>
+		</create> 
+		
+		<create creator="spring" javascript="CommentManager"> 
+			<param name="beanName" value="commentManager"/>
+		</create> 
+		<create creator="spring" javascript="FundManager"> 
+			<param name="beanName" value="fundManager"/>
+		</create> 
+		
+		
+		<!-- 定义使用Bean转换器处理如下Java类 -->
+		<convert converter="bean" match="Crowdfunding.po.User"/> 
+		<convert converter="bean" match="Crowdfunding.po.Comment"/> 
+		<convert converter="bean" match="Crowdfunding.po.Project"/> 
+		<convert converter="bean" match="Crowdfunding.po.Types"/> 
+		<convert converter="bean" match="Crowdfunding.po.Fund"/> 
+	</allow>
+</dwr>

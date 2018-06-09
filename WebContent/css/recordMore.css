@@ -1,0 +1,17 @@
+#record-text{
+	width:900px;
+	margin:0 auto;
+}
+.pp{display:inline-block;
+	float:right;
+	margin-bottom:0;
+	height:40px;
+	line-height:40px;
+	margin-left:20px;
+	}
+	.article-info h1{
+	margin:5px 0;
+	padding:0;
+	text-align:left;
+	display:inline-block;
+	}

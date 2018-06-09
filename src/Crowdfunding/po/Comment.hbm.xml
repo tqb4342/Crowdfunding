@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Crowdfunding.po">
+	<class name="Comment" table="comment">
+		<id name="cid" type="integer" column="cid">
+			<generator class="increment"/>
+		</id> 
+		<property name="pid" column="pid" type="integer" not-null="true"/> 
+		<property name="uid" column="uid" type="integer" not-null="true"/> 
+		<property name="ptext" column="ptext" type="text" not-null="true"/>  
+		<property name="pdate" column="pdate" type="date" not-null="false"/>  
+		<property name="reply" column="reply" type="text" not-null="false"/>  
+		<property name="replydate" column="replydate" type="date" not-null="false"/>  
+		<many-to-one name="user" class="Crowdfunding.po.User" cascade="save-update" column="uid" insert="false" update="false" lazy="false"  not-null="true"/>
+		<many-to-one name="project" class="Crowdfunding.po.Project" cascade="save-update" column="pid" insert="false" update="false" lazy="false"  not-null="true"/>
+	</class>
+</hibernate-mapping>

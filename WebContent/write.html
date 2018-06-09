@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.bootcss.com/p/bootstrap-wysiwyg/ -->
+<html lang="zh-CN">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="static/js/hm.js"></script>
+    <meta charset="utf-8">
+    <title>众筹网</title>
+   
+    <link href="static/css/write.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/bootstrap-switch.css" rel="stylesheet">
+		<link href="static/css/manage.css" rel="stylesheet">
+        <link href="static/css/docs.min.css" rel="stylesheet">
+        <link href="static/css/font-awesome.css" rel="stylesheet">
+        <link href="css/bar.css" rel="stylesheet">
+	    <link href="css/foot.css" rel="stylesheet">
+	    <link href="css/index.css" rel="stylesheet">
+ 
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="static/js/jquery.js"></script>
+		
+		<script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/bootstrap-switch.js"></script>
+		<script src="static/js/bootstrap-wysiwyg.js"></script>
+        <script src="static/js/jquery.hotkeys.js"></script>
+        <script src="static/js/bootstrap.confirm.js"></script>
+   		<script type='text/javascript' src='static/js/index_CN.js'></script>
+<script src="static/js/write.js"></script>
+<script src="static/js/search.js"></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/util.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/engine.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/interface/UserManager.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/interface/TypesManager.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/interface/ProjectManager.js'></script>	
+<style type="text/css">
+input#addquestion-title-input {
+    margin-left: auto;
+}
+input#addquestion-abstract-input {
+    margin-left: auto;
+}
+</style>
+	
+	<script type="text/javascript">
+		$(function(){
+			$(".divedit").hover(function(){
+				$(this).addClass("texthover");	
+			},function(){
+				$(this).removeClass("texthover");	
+			});
+		});
+</script>
+	
+
+	
+  </head>
+  <body>
+
+<div id="mainPageHeader">
+    <div class="personLogo">
+        <div class="left">
+            <img src="static/image/logo.png" alt="">
+        </div>
+        <div id="noLogin">
+            <span><img src="static/image/dingwei.png" alt=""> 哈尔滨</span>
+            <span>
+                <ul>
+                    <li><a href="register.html">个人注册</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div id="header">
+    <div class="page-container" id="nav">
+        <div class="menu">
+            <ul class="nav-item l">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="ProjectClassify.html?tid=1">奖励众筹</a></li>
+                <li><a href="ProjectClassify.html?tid=2">公益众筹</a></li>
+                <li><a href="write.html">发起众筹</a></li>
+            </ul>
+            <div>
+             <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	        <input type="text" class="form-control input-lg maincontent1-form" id="Search-blog" placeholder="search"  data-provide="typeahead">
+	        </div>
+	        <button type="button" id="button-blog" class="btn btn-default">搜&nbsp;&nbsp;索</button>
+	       </form>
+	       </div>
+        </div>
+
+        <div id="login-div">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="hero-unit">
+	
+   		<div class="panel-body">
+                                       			<div class="row">
+											    	<input id="addquestion-title-input" type="text" class="form-control col-sm-12" placeholder="请输入众筹项目标题" aria-describedby="sizing-addon1">
+												</div>
+												<div class="row">
+											    	<input id="addquestion-abstract-input" type="text" class="form-control col-sm-12" placeholder="请输入众筹项目摘要" aria-describedby="sizing-addon1">
+												</div>
+										        <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+										            <div class="btn-group">
+										                <a class="btn dropdown-toggle" data-toggle="dropdown" title="" data-original-title="字体">
+										                    <i class="icon-font"></i><b class="caret"></b>
+										                </a>
+										                <ul class="dropdown-menu">
+										                    <li><a data-edit="fontName Serif" style="font-family:'Serif'">Serif</a></li>
+										                    <li><a data-edit="fontName Sans" style="font-family:'Sans'">Sans</a></li>
+										                    <li><a data-edit="fontName Arial" style="font-family:'Arial'">Arial</a></li>
+										                    <li><a data-edit="fontName Arial Black" style="font-family:'Arial Black'">Arial Black</a></li>
+										                    <li><a data-edit="fontName Courier" style="font-family:'Courier'">Courier</a></li>
+										                    <li><a data-edit="fontName Courier New" style="font-family:'Courier New'">Courier New</a></li>
+										                    <li><a data-edit="fontName Comic Sans MS" style="font-family:'Comic Sans MS'">Comic Sans MS</a></li>
+										                    <li><a data-edit="fontName Helvetica" style="font-family:'Helvetica'">Helvetica</a></li>
+										                    <li><a data-edit="fontName Impact" style="font-family:'Impact'">Impact</a></li>
+										                    <li><a data-edit="fontName Lucida Grande" style="font-family:'Lucida Grande'">Lucida Grande</a></li>
+										                    <li><a data-edit="fontName Lucida Sans" style="font-family:'Lucida Sans'">Lucida Sans</a></li>
+										                    <li><a data-edit="fontName Tahoma" style="font-family:'Tahoma'">Tahoma</a></li>
+										                    <li><a data-edit="fontName Times" style="font-family:'Times'">Times</a></li>
+										                    <li><a data-edit="fontName Times New Roman" style="font-family:'Times New Roman'">Times New Roman</a></li><li><a data-edit="fontName Verdana" style="font-family:'Verdana'">Verdana</a></li>
+										                </ul>
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn dropdown-toggle" data-toggle="dropdown" title="" data-original-title="文字大小">
+										                    <i class="icon-text-height"></i>&nbsp;<b class="caret"></b>
+										                </a>
+										                <ul class="dropdown-menu">
+										                    <li><a data-edit="fontSize 5"><font size="5">巨大</font></a></li>
+										                    <li><a data-edit="fontSize 4"><font size="4">大</font></a></li>
+										                    <li><a data-edit="fontSize 3"><font size="3">中</font></a></li>
+										                    <li><a data-edit="fontSize 2"><font size="2">小</font></a></li>
+										                    <li><a data-edit="fontSize 1"><font size="1">极小</font></a></li>
+										                </ul>
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn" data-edit="bold" title="" data-original-title="加粗 (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+										                <a class="btn" data-edit="italic" title="" data-original-title="倾斜 (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+										                <a class="btn" data-edit="strikethrough" title="" data-original-title="横杠"><i class="icon-strikethrough"></i></a>
+										                <a class="btn" data-edit="underline" title="" data-original-title="下划线 (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn" data-edit="insertunorderedlist" title="" data-original-title="列表">
+										                    <i class="icon-list-ul"></i>
+										                </a>
+										                <a class="btn" data-edit="insertorderedlist" title="" data-original-title="数字列表">
+										                    <i class="icon-list-ol"></i>
+										                </a>
+										                <a class="btn" data-edit="outdent" title="" data-original-title="还原缩进 (Shift+Tab)">
+										                    <i class="icon-indent-left"></i>
+										                </a>
+										                <a class="btn" data-edit="indent" title="" data-original-title="缩进 (Tab)">
+										                    <i class="icon-indent-right"></i>
+										                </a>
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn btn-info" data-edit="justifyleft" title="" data-original-title="左对齐 (Ctrl/Cmd+L)">
+										                    <i class="icon-align-left"></i>
+										                </a>
+										                <a class="btn" data-edit="justifycenter" title="" data-original-title="居中 (Ctrl/Cmd+E)">
+										                    <i class="icon-align-center"></i>
+										                </a>
+										                <a class="btn" data-edit="justifyright" title="" data-original-title="右对齐 (Ctrl/Cmd+R)">
+										                    <i class="icon-align-right"></i>
+										                </a>
+										                <a class="btn" data-edit="justifyfull" title="" data-original-title="自适应 (Ctrl/Cmd+J)">
+										                    <i class="icon-align-justify"></i>
+										                </a>
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn" title="" id="pictureBtn" data-original-title="Insert picture (or just drag &amp; drop)">
+										                    <i class="icon-picture"></i>
+										                </a>
+				                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;">
+										            </div>
+										            <div class="btn-group">
+										                <a class="btn" data-edit="undo" title="" data-original-title="撤销 (Ctrl/Cmd+Z)">
+										                    <i class="icon-undo"></i>
+										                </a>
+										                <a class="btn" data-edit="redo" title="" data-original-title="取消撤销 (Ctrl/Cmd+Y)">
+										                    <i class="icon-repeat"></i>
+										                </a>
+										            </div>
+										            <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="" style="display: none;">
+										        </div>
+										        <div id="addquestion-content-div" class="editor" contenteditable="true">
+									           		请在这里输入你的众筹项目详细内容......
+									        	</div>
+                                       		</div>
+                                       		
+                                       		<!-- 博文类型 -->
+   		<label for="inputEmail3" class="col-sm-2 control-label">众筹类型：</label>
+   		<select id="type-select" class="form-control">
+		 
+		</select>
+		<button id="submit-blog" type="button" class="btn btn-info">&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;</button>
+		<div id="submit-tishi" style="color:red;"></div>
+     </div>
+</div>
+</body></html>

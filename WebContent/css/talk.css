@@ -1,0 +1,164 @@
+.talkAll{
+	width:1003px;
+	margin:0 auto;
+	padding-left:30px;
+}
+
+
+#talkLeft ul li {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+#talkLeft {
+    width: 150px;
+    
+    margin-right: 20px;
+    background-color: #ffac3a;
+	/*background: linear-gradient(to top, rgb(255, 174, 58), white);*/    
+	float: left;
+}
+
+.hidden1 li{
+	display:none;
+	width: 330px;
+}
+
+
+#talkAll > div{
+	float:left;
+}
+#talkLeft ul, #right ul {
+    padding: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+#talkLeft ul li a {
+    text-align: center;
+    /*color: #626262;*/
+    color: #fff;
+    font-size: 18px;
+}
+
+.timeClass{
+	
+	position:relative;
+	top:-11px;
+	left:-171px;
+}
+
+/*Ö÷Ò³Í·*/
+#mainPageHeader {
+    height: 85px;
+    line-height: 85px;
+}
+
+#mainPageHeader .personLogo {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+#mainPageHeader .left {
+    float: left;
+}
+
+#mainPageHeader .personLogo img {
+}
+
+#noLogin {
+    float: right;
+}
+
+#mainPageHeader #noLogin img {
+    border: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#noLogin > span {
+    margin-right: 10px;
+    display: inline-block;
+    float: left;
+}
+
+#noLogin li {
+    padding: 0 3px;
+    float: left;
+}
+
+#noLogin li:nth-last-child(2) a {
+    border-right: 1px solid #eee;
+}
+
+#noLogin li a {
+    text-decoration: none;
+    color: #333;
+    padding-right: 5px;
+    border-right: 1px solid #666;
+}
+
+#noLogin li:last-child {
+    border: 1px solid #eee;
+}
+
+#noLogin:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#header .nav-item li {
+    position: relative;
+    left: -120px;
+}
+
+
+#login-div {
+    position: relative;
+}
+
+#login-div .imglogo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#login-div:hover .logoin-div {
+    display: block;
+}
+
+img {
+    vertical-align: inherit;
+}
+
+#login-div .logoin-div {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 800;
+}
+
+#login-div .logoin-div a {
+    color: #333;
+}
+
+
+#login-div .logoin-div li {
+    list-style: none;
+    width: 150px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    background: #fff;
+    /* height: 40px; */
+}
+
+#pubLifeRecordButton{
+	display:none;
+}

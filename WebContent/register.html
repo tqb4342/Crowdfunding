@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>注册丨众筹网</title>
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/register.css">
+<link href="css/foot.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/register.js"></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/util.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/engine.js'></script>
+<script type='text/javascript' src='/Crowdfunding/dwr/interface/UserManager.js'></script>
+
+
+<body>
+
+<div class="register-container">
+	 <img src="static/image/logo.png" alt="">
+	
+	
+	<div  id="registerForm">
+		<div>
+			<!-- <span>账号：</span> -->
+			<input type="text" id="accountName" name="username" class="username" placeholder="您的用户名" autocomplete="off"/>
+		</div>
+		<!-- 
+		<div>
+			<span>身份证：</span>
+			<input type="text" id="idCardNumber" name="idCardNumber" class="username" placeholder="身份证号" autocomplete="off"/>
+		</div> -->
+		<div>
+			<!--<span>密码：</span> -->
+			<input type="password" id="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div>
+			<!--<span>密码确认：</span> -->
+			<input type="password" id="confirm_password" name="confirm_password" class="confirm_password" placeholder="再次输入密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div>
+			<!--<span>姓名：</span> -->
+			<input type="text" id="realname" name="realname" class="username" placeholder="真实姓名" autocomplete="off"/>
+		</div>
+		<!--
+		<div>
+			<span>个人签名：</span>
+			<input type="text" id="briefIntroduction" name="briefIntroduction" class="username" placeholder="个人签名" autocomplete="off"/>
+		</div>
+
+		
+		<div>
+			<span>年龄：</span>
+			<input type="text"  name="age" class="age" placeholder="输入年龄" autocomplete="off" id="age"/>
+		</div>
+		  
+		<br/>
+		<div>
+			<span>性别：</span>
+			<input type="radio" name="sex" value="UNKOWN" style="width:30px;height:20px" checked/>保密
+			<input type="radio" name="sex" value="MALE" style="width:30px;height:20px"/>男性
+			<input type="radio" name="sex" value="FEMALE" style="width:30px;height:20px"/>女性
+		</div>
+	
+		<div>
+			<input type="text"  name="age" class="age" placeholder="输入年龄" autocomplete="off" id="age"/>
+		</div>
+		<br/>
+		-->
+		<div>
+			<input type="text" id="phone_number" name="phone_number" class="phone_number" placeholder="输入手机号码" autocomplete="off" id="number"/>
+		</div>	
+		
+		
+
+		<div>
+			<p>
+				<span id="login_msg" style="color:red"></span>
+			</p>
+		</div>
+
+		<button id="reg_submit" >注 册</button>
+	</div>
+	<a href="login.html">
+		<button type="button" class="register-tis">已经有账号？</button>
+	</a>
+
+</div>
+
+
+
+</body>
+</html>
